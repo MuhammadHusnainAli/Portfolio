@@ -1,0 +1,380 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3B82F6;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(59, 130, 246, 0.4);
+}
+
+.imageGlow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #3B82F6, #8B5CF6, #EC4899, #3B82F6);
+  border-radius: 50%;
+  z-index: -1;
+  animation: rotate 4s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.roleContainer {
+  font-size: 1.8rem;
+  color: #CBD5E1;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rolePrefix {
+  margin-right: 0.5rem;
+}
+
+.role {
+  background: linear-gradient(135deg, #10B981, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3B82F6;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  margin-top: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  color: white;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.primaryButton:hover {
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #CBD5E1;
+  border: 2px solid #475569;
+}
+
+.secondaryButton:hover {
+  border-color: #3B82F6;
+  color: #3B82F6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #CBD5E1;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  background: var(--social-color, #3B82F6);
+  color: white;
+  border-color: var(--social-color, #3B82F6);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.floatingElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floatingElement {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.floatingElement:nth-child(1) {
+  top: 20%;
+  right: 10%;
+}
+
+.floatingElement2 {
+  top: 60%;
+  left: 5%;
+}
+
+.floatingElement3 {
+  top: 30%;
+  left: 15%;
+}
+
+.backgroundGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  z-index: 1;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    min-height: 90vh;
+  }
+
+  .imageWrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .roleContainer {
+    font-size: 1.4rem;
+    justify-content: center;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 1.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .floatingElement {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .content {
+    gap: 3rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+
+  .roleContainer {
+    font-size: 1.6rem;
+  }
+
+  .stats {
+    gap: 1.5rem;
+  }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1400px) {
+  .name {
+    font-size: 5rem;
+  }
+
+  .roleContainer {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation improvements */
+.hero * {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .imageGlow {
+    animation: none;
+  }
+  
+  .floatingElement {
+    animation: none;
+  }
+}
+
+/* Focus states for accessibility */
+.primaryButton:focus,
+.secondaryButton:focus,
+.socialLink:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}

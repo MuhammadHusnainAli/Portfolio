@@ -1,0 +1,429 @@
+.experience {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 1rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #3B82F6, #8B5CF6);
+  z-index: 1;
+}
+
+.timelineItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.timelineMarker {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.markerDot {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  border-radius: 50%;
+  border: 4px solid #0F172A;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  position: relative;
+  left: 1rem;
+}
+
+.markerLine {
+  position: absolute;
+  top: 20px;
+  left: 1.5rem;
+  width: 1px;
+  height: 100px;
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.timelineItem:last-child .markerLine {
+  display: none;
+}
+
+.experienceCard {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.experienceCard:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.jobInfo {
+  flex: 1;
+}
+
+.position {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin: 0 0 0.5rem 0;
+}
+
+.company {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3B82F6;
+  margin: 0;
+}
+
+.jobMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.duration,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94A3B8;
+  font-size: 0.9rem;
+}
+
+.icon {
+  font-size: 0.8rem;
+  color: #3B82F6;
+}
+
+.description {
+  color: #CBD5E1;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  font-size: 1.05rem;
+}
+
+.achievements {
+  margin-bottom: 2rem;
+}
+
+.achievementsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #F1F5F9;
+  margin: 0 0 1rem 0;
+}
+
+.achievementsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.achievement {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  color: #CBD5E1;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.achievementIcon {
+  color: #10B981;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.technologies {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.techTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F1F5F9;
+  margin: 0 0 1rem 0;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: #93C5FD;
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.techTag:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #DBEAFE;
+  transform: translateY(-2px);
+}
+
+.publications {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.publicationsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.publicationsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.publication {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.publication:hover {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+.publicationTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #F1F5F9;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.publicationJournal {
+  color: #C4B5FD;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .timeline::before {
+    left: 1rem;
+  }
+
+  .timelineItem {
+    gap: 1rem;
+  }
+
+  .markerDot {
+    left: 0.5rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .markerLine {
+    left: 1rem;
+  }
+
+  .experienceCard {
+    padding: 1.5rem;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jobMeta {
+    align-items: flex-start;
+  }
+
+  .position {
+    font-size: 1.3rem;
+  }
+
+  .company {
+    font-size: 1.1rem;
+  }
+
+  .publicationsList {
+    grid-template-columns: 1fr;
+  }
+
+  .publication {
+    padding: 1.25rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .cardHeader {
+    gap: 1.5rem;
+  }
+
+  .publicationsList {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1400px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .experienceCard {
+    padding: 2.5rem;
+  }
+
+  .position {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation improvements */
+.experience * {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.experienceCard:focus,
+.techTag:focus,
+.publication:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .experienceCard:hover,
+  .techTag:hover,
+  .publication:hover {
+    transform: none;
+  }
+  
+  .markerDot {
+    box-shadow: none;
+  }
+}
+
+/* Custom scrollbar for better UX */
+.achievementsList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.achievementsList::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.achievementsList::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 2px;
+}
+
+.achievementsList::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}

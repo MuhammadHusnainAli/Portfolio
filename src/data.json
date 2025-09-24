@@ -1,0 +1,188 @@
+{
+  "personal": {
+    "name": "Husnain",
+    "title": "AI Engineer",
+    "subtitle": "Specialized in Agentic AI, LLM Fine-tuning & Intelligent Chatbots",
+    "email": "husn@gmail.com",
+    "location": "Remote",
+    "bio": "Passionate AI Engineer with 3+ years of experience in building intelligent systems, fine-tuning large language models, and developing agentic AI solutions. I specialize in creating sophisticated chatbots and AI agents that solve real-world problems.",
+    "yearsOfExperience": "3+",
+    "avatar": "/src/assets/images/avatar.jpg"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/in/husnain",
+    "github": "https://github.com/husnain",
+    "twitter": "https://twitter.com/husnain"
+  },
+  "skills": {
+    "technical": [
+      {
+        "category": "AI/ML Frameworks",
+        "items": ["TensorFlow", "PyTorch", "Hugging Face", "LangChain", "OpenAI API", "Anthropic Claude"]
+      },
+      {
+        "category": "Programming Languages",
+        "items": ["Python", "JavaScript", "TypeScript", "SQL", "R"]
+      },
+      {
+        "category": "AI Specializations",
+        "items": ["Large Language Models", "Fine-tuning", "Prompt Engineering", "RAG Systems", "Agent Frameworks"]
+      },
+      {
+        "category": "Cloud & DevOps",
+        "items": ["AWS", "Google Cloud", "Docker", "Kubernetes", "MLflow", "Weights & Biases"]
+      },
+      {
+        "category": "Databases & Tools",
+        "items": ["PostgreSQL", "MongoDB", "Vector Databases", "Redis", "Elasticsearch"]
+      }
+    ],
+    "soft": [
+      "Problem Solving",
+      "Team Leadership",
+      "Project Management",
+      "Technical Communication",
+      "Research & Development"
+    ]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "company": "Agentic AI Solutions",
+      "position": "Senior AI Engineer",
+      "duration": "2023 - Present",
+      "location": "Remote",
+      "description": "Leading development of autonomous AI agents and multi-agent systems for enterprise clients.",
+      "achievements": [
+        "Built 15+ production-ready AI agents serving 100k+ users",
+        "Reduced customer service costs by 60% through intelligent chatbot deployment",
+        "Led team of 5 engineers in developing agentic AI framework",
+        "Implemented RAG systems improving response accuracy by 40%"
+      ],
+      "technologies": ["LangChain", "OpenAI GPT-4", "Vector Databases", "FastAPI", "Docker"]
+    },
+    {
+      "id": 2,
+      "company": "InnovateAI Labs",
+      "position": "AI Engineer",
+      "duration": "2022 - 2023",
+      "location": "San Francisco, CA",
+      "description": "Specialized in fine-tuning large language models and developing conversational AI systems.",
+      "achievements": [
+        "Fine-tuned 20+ domain-specific LLMs achieving 95% accuracy",
+        "Developed chatbot platform processing 1M+ conversations monthly",
+        "Optimized model inference reducing latency by 70%",
+        "Published 3 research papers on LLM optimization techniques"
+      ],
+      "technologies": ["Hugging Face", "PyTorch", "AWS SageMaker", "Python", "MLflow"]
+    },
+    {
+      "id": 3,
+      "company": "TechStart Inc.",
+      "position": "Junior AI Developer",
+      "duration": "2021 - 2022",
+      "location": "New York, NY",
+      "description": "Started career developing machine learning models and natural language processing solutions.",
+      "achievements": [
+        "Built first production ML pipeline processing 10k+ daily requests",
+        "Implemented sentiment analysis system with 92% accuracy",
+        "Created automated data preprocessing pipelines",
+        "Contributed to open-source AI libraries with 500+ GitHub stars"
+      ],
+      "technologies": ["TensorFlow", "scikit-learn", "Pandas", "Flask", "PostgreSQL"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "AgenticFlow - Multi-Agent AI Framework",
+      "description": "Open-source framework for building collaborative AI agents that can work together to solve complex tasks autonomously.",
+      "image": "/src/assets/images/agentic-flow.jpg",
+      "technologies": ["Python", "LangChain", "FastAPI", "Redis", "Docker"],
+      "features": [
+        "Multi-agent coordination system",
+        "Dynamic task delegation",
+        "Real-time collaboration monitoring",
+        "Plugin architecture for custom agents"
+      ],
+      "github": "https://github.com/husnain/agentic-flow",
+      "demo": "https://agentic-flow-demo.vercel.app",
+      "status": "Open Source"
+    },
+    {
+      "id": 2,
+      "title": "FineTune Studio",
+      "description": "Web-based platform for fine-tuning large language models with intuitive interface and automated optimization.",
+      "image": "/src/assets/images/finetune-studio.jpg",
+      "technologies": ["React", "Python", "Hugging Face", "AWS", "PostgreSQL"],
+      "features": [
+        "Drag-and-drop dataset preparation",
+        "Automated hyperparameter tuning",
+        "Real-time training monitoring",
+        "Model comparison and evaluation"
+      ],
+      "github": "https://github.com/husnain/finetune-studio",
+      "demo": "https://finetune-studio.com",
+      "status": "Production"
+    },
+    {
+      "id": 3,
+      "title": "IntelliBot Enterprise",
+      "description": "Enterprise-grade chatbot solution with advanced NLP capabilities and seamless CRM integration.",
+      "image": "/src/assets/images/intellibot.jpg",
+      "technologies": ["Node.js", "OpenAI API", "MongoDB", "React", "WebSocket"],
+      "features": [
+        "Multi-language support (15+ languages)",
+        "Context-aware conversations",
+        "CRM and helpdesk integrations",
+        "Advanced analytics dashboard"
+      ],
+      "github": "https://github.com/husnain/intellibot-enterprise",
+      "demo": "https://intellibot-demo.com",
+      "status": "Client Project"
+    },
+    {
+      "id": 4,
+      "title": "RAG Knowledge Assistant",
+      "description": "Retrieval-Augmented Generation system for enterprise knowledge management with vector search capabilities.",
+      "image": "/src/assets/images/rag-assistant.jpg",
+      "technologies": ["Python", "LangChain", "Pinecone", "Streamlit", "OpenAI"],
+      "features": [
+        "Semantic document search",
+        "Real-time knowledge updates",
+        "Multi-format document support",
+        "Citation and source tracking"
+      ],
+      "github": "https://github.com/husnain/rag-knowledge-assistant",
+      "demo": "https://rag-assistant-demo.streamlit.app",
+      "status": "Open Source"
+    }
+  ],
+  "education": [
+
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "Superior University Lahore Pakistan",
+      "year": "2022",
+      "description": "Focus on AI , Machine Learning , Deep Learning and LLM Fine-tuning"
+    }
+  ],
+  "certifications": [
+    "AWS Certified Machine Learning - Specialty",
+    "Google Cloud Professional ML Engineer",
+    "OpenAI GPT-4 Certified Developer",
+    "Hugging Face Certified Transformer Specialist"
+  ],
+  "publications": [
+    {
+      "title": "Optimizing Large Language Models for Agentic AI Systems",
+      "journal": "AI Research Quarterly",
+      "year": "2024"
+    },
+    {
+      "title": "Fine-tuning Strategies for Domain-Specific Chatbots",
+      "journal": "Machine Learning Journal",
+      "year": "2023"
+    }
+  ]
+}

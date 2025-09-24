@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Portfolio Images</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #0f172a; color: white; }
+        .canvas-container { margin: 20px 0; }
+        canvas { border: 1px solid #3b82f6; margin: 10px 0; }
+        button { background: #3b82f6; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #2563eb; }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Image Generator</h1>
+    <p>Click the buttons below to generate and download placeholder images for your portfolio:</p>
+    
+    <div class="canvas-container">
+        <h3>Avatar (300x300)</h3>
+        <canvas id="avatar" width="300" height="300"></canvas>
+        <br><button onclick="generateAvatar()">Generate Avatar</button>
+        <button onclick="downloadCanvas('avatar', 'avatar.jpg')">Download Avatar</button>
+    </div>
+
+    <div class="canvas-container">
+        <h3>Project Images (400x250)</h3>
+        <canvas id="project1" width="400" height="250"></canvas>
+        <br><button onclick="generateProject('project1', 'AgenticFlow', '#3b82f6')">Generate AgenticFlow</button>
+        <button onclick="downloadCanvas('project1', 'agentic-flow.jpg')">Download</button>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="project2" width="400" height="250"></canvas>
+        <br><button onclick="generateProject('project2', 'FineTune Studio', '#8b5cf6')">Generate FineTune Studio</button>
+        <button onclick="downloadCanvas('project2', 'finetune-studio.jpg')">Download</button>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="project3" width="400" height="250"></canvas>
+        <br><button onclick="generateProject('project3', 'IntelliBot', '#10b981')">Generate IntelliBot</button>
+        <button onclick="downloadCanvas('project3', 'intellibot.jpg')">Download</button>
+    </div>
+
+    <div class="canvas-container">
+        <canvas id="project4" width="400" height="250"></canvas>
+        <br><button onclick="generateProject('project4', 'RAG Assistant', '#f59e0b')">Generate RAG Assistant</button>
+        <button onclick="downloadCanvas('project4', 'rag-assistant.jpg')">Download</button>
+    </div>
+
+    <script>
+        function generateAvatar() {
+            const canvas = document.getElementById('avatar');
+            const ctx = canvas.getContext('2d');
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 300, 300);
+            gradient.addColorStop(0, '#3b82f6');
+            gradient.addColorStop(1, '#8b5cf6');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 300, 300);
+            
+            // AI text
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('AI', 150, 130);
+            
+            ctx.font = 'bold 24px Arial';
+            ctx.fillText('Engineer', 150, 170);
+            
+            // Circuit pattern
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                ctx.arc(50 + i * 50, 50, 10, 0, Math.PI * 2);
+                ctx.stroke();
+                
+                ctx.beginPath();
+                ctx.moveTo(50 + i * 50, 60);
+                ctx.lineTo(50 + i * 50, 100);
+                ctx.stroke();
+            }
+        }
+
+        function generateProject(canvasId, title, color) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext('2d');
+            
+            // Background
+            ctx.fillStyle = '#1e293b';
+            ctx.fillRect(0, 0, 400, 250);
+            
+            // Accent color overlay
+            const gradient = ctx.createLinearGradient(0, 0, 400, 250);
+            gradient.addColorStop(0, color + '40');
+            gradient.addColorStop(1, color + '20');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 250);
+            
+            // Title
+            ctx.fillStyle = 'white';
+            ctx.font = 'bold 32px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText(title, 200, 125);
+            
+            // Decorative elements
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(50, 50, 20, 0, Math.PI * 2);
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.arc(350, 200, 15, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Tech icons representation
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 3;
+            ctx.strokeRect(320, 30, 60, 40);
+            ctx.strokeRect(20, 180, 60, 40);
+        }
+
+        function downloadCanvas(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/jpeg', 0.9);
+            link.click();
+        }
+
+        // Generate all images on load
+        window.onload = function() {
+            generateAvatar();
+            generateProject('project1', 'AgenticFlow', '#3b82f6');
+            generateProject('project2', 'FineTune Studio', '#8b5cf6');
+            generateProject('project3', 'IntelliBot', '#10b981');
+            generateProject('project4', 'RAG Assistant', '#f59e0b');
+        };
+    </script>
+</body>
+</html>

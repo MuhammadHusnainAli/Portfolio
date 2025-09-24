@@ -1,0 +1,483 @@
+.contact {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 1rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoCard {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+  height: fit-content;
+}
+
+.infoTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin: 0 0 1rem 0;
+}
+
+.infoDescription {
+  color: #CBD5E1;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  font-size: 1.05rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  transform: translateX(5px);
+}
+
+.contactIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLabel {
+  font-size: 0.85rem;
+  color: #94A3B8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contactValue {
+  font-size: 1rem;
+  color: #F1F5F9;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.socialSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+}
+
+.socialTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #F1F5F9;
+  margin: 0 0 1.5rem 0;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--social-color, #3B82F6);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+.socialIcon {
+  width: 45px;
+  height: 45px;
+  background: var(--social-color, #3B82F6);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.socialInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialLabel {
+  font-size: 1rem;
+  color: #F1F5F9;
+  font-weight: 600;
+}
+
+.socialUsername {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  margin-top: 0.1rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+}
+
+.formTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #F1F5F9;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #94A3B8;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #10B981, #059669);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer {
+  text-align: center;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footerText {
+  color: #94A3B8;
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.footerSubtext {
+  color: #64748B;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .infoCard,
+  .form {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .input,
+  .textarea {
+    padding: 0.9rem 0.9rem 0.9rem 2.8rem;
+  }
+
+  .inputIcon {
+    left: 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .socialLinks {
+    gap: 0.8rem;
+  }
+
+  .socialLink {
+    padding: 0.8rem;
+  }
+
+  .socialIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .contactIcon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .content {
+    gap: 3rem;
+  }
+
+  .infoCard,
+  .form {
+    padding: 2.25rem;
+  }
+}
+
+/* Large Screen Styles */
+@media (min-width: 1400px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .infoCard,
+  .form {
+    padding: 3rem;
+  }
+
+  .infoDescription {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animation improvements */
+.contact * {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus states for accessibility */
+.contactItem:focus,
+.socialLink:focus,
+.input:focus,
+.textarea:focus,
+.submitButton:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .contactItem:hover,
+  .socialLink:hover,
+  .submitButton:hover {
+    transform: none;
+  }
+  
+  .spinner {
+    animation: none;
+  }
+}
+
+/* Form validation states */
+.input:invalid,
+.textarea:invalid {
+  border-color: #EF4444;
+}
+
+.input:valid,
+.textarea:valid {
+  border-color: #10B981;
+}
+
+/* Custom scrollbar for textarea */
+.textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textarea::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 3px;
+}
+
+.textarea::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
